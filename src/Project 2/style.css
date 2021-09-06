@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  font-family: sans-serif;
+}
+
+.container {
+  height: 900px;
+}
+
+.header {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  font-size: 4vw;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 3vw;
+  gap: 1vw;
+}
+
+.main {
+  height: 80%;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main__image {
+  background-image: url("./images/facepic.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  width: 50%;
+}
+
+.main__text {
+  width: 50%;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__text-1 {
+  font-size: 10vw;
+}
+
+.main__text-2, .main__text-3, .main__text-4, .main__text-5 {
+  font-size: 5vw;
+}
+
+footer {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*[class ^="footer__"] all in the footer*/
+}
+
+footer [class^="footer__"] img {
+  width: 5 VW;
+}
+
+/* 
+max-width 
+    will allow style if the width is at or under the 'max-width'
+   
+min-width 
+    will allow style if the width is above the 'min-width'
+*/
+/*# sourceMappingURL=style.css.map */
