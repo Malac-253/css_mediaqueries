@@ -59,8 +59,9 @@ $destop: 1200px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: left center;
-
+       
         width: 50%;
+        // border: 2px solid red;
     }
 
     &__text{
@@ -101,3 +102,49 @@ max-width
 min-width 
     will allow style if the width is above the 'min-width'
 */
+
+@media (max-width: 650px) {
+    .header{
+        justify-content: center;
+
+        &__logo{
+            font-size: 40px ;
+        }
+
+        &__menu{
+            display: none;
+        }
+    }
+
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__image{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-size: 100%;
+            background-position: center;
+        }
+
+        &__text{
+
+        }
+
+    }
+
+    .footer{
+
+        justify-content: center;
+
+        [class ^="footer__"]{
+            img{
+                width: 45 px;
+                height: 45 px;
+            }
+        }
+
+    }
+    
+}
